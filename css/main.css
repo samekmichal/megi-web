@@ -1,0 +1,2068 @@
+/*
+  * HTML5 Boilerplate
+  *
+  * What follows is the result of much research on cross-browser styling.
+  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+  * Kroc Camen, and the H5BP dev community and team.
+*/
+/* ==========================================================================
+  Base styles: opinionated defaults
+========================================================================== */
+/*! normalize.css v1.1.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  background: #fff;
+  /* 1 */
+  color: #000;
+  /* 2 */
+  font-size: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
+  -ms-text-size-adjust: 100%;
+  /* 4 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+
+blockquote {
+  margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+  margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+  quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+
+sup {
+  top: -0.5em;
+}
+
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* basic scrollbar styling */
+/* vertical scrollbar */
+
+.mCSB_container {
+  width: auto;
+  margin-right: 30px;
+  overflow: hidden;
+}
+
+
+.mCSB_container.mCS_no_scrollbar {
+  margin-right: 0;
+}
+
+
+.mCS_disabled > .mCustomScrollBox > .mCSB_container.mCS_no_scrollbar,
+.mCS_destroyed > .mCustomScrollBox > .mCSB_container.mCS_no_scrollbar {
+  margin-right: 30px;
+}
+
+
+.mCustomScrollBox > .mCSB_scrollTools {
+  width: 4px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+
+.mCSB_scrollTools a + .mCSB_draggerContainer {
+  margin: 20px 0;
+}
+
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+.mCSB_scrollTools .mCSB_dragger {
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+}
+
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 4px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+  display: block;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+.mCSB_scrollTools .mCSB_buttonDown {
+  top: 100%;
+  margin-top: -40px;
+}
+
+/* horizontal scrollbar */
+
+.mCSB_horizontal > .mCSB_container {
+  height: auto;
+  margin-right: 0;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+
+.mCSB_horizontal > .mCSB_container.mCS_no_scrollbar {
+  margin-bottom: 0;
+}
+
+
+.mCS_disabled > .mCSB_horizontal > .mCSB_container.mCS_no_scrollbar,
+.mCS_destroyed > .mCSB_horizontal > .mCSB_container.mCS_no_scrollbar {
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+
+
+.mCSB_horizontal.mCustomScrollBox > .mCSB_scrollTools {
+  width: 100%;
+  height: 16px;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+
+.mCSB_horizontal > .mCSB_scrollTools a + .mCSB_draggerContainer {
+  margin: 0 20px;
+}
+
+
+.mCSB_horizontal > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 100%;
+  height: 2px;
+  margin: 7px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger {
+  width: 30px;
+  height: 100%;
+}
+
+
+.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 4px;
+  margin: 6px auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+.mCSB_horizontal > .mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_horizontal > .mCSB_scrollTools .mCSB_buttonRight {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+  float: left;
+}
+
+
+.mCSB_horizontal > .mCSB_scrollTools .mCSB_buttonRight {
+  margin-left: -40px;
+  float: right;
+}
+
+
+.mCustomScrollBox {
+  -ms-touch-action: none;
+  /*MSPointer events - direct all pointer events to js*/
+}
+
+/* default scrollbar colors and backgrounds (default theme) */
+
+.mCustomScrollBox > .mCSB_scrollTools {
+  opacity: 0.75;
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+  /* old ie */
+}
+
+
+.mCustomScrollBox:hover > .mCSB_scrollTools {
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
+  /* old ie */
+}
+
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  background: #000;
+  /* rgba fallback */
+  background: rgba(0, 0, 0, 0.15);
+  filter: "alpha(opacity=40)";
+  -ms-filter: "alpha(opacity=40)";
+  /* old ie */
+}
+
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #fff;
+  /* rgba fallback */
+  background: rgba(255, 255, 255, 0.75);
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+  /* old ie */
+}
+
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background: rgba(255, 255, 255, 0.85);
+  filter: "alpha(opacity=85)";
+  -ms-filter: "alpha(opacity=85)";
+  /* old ie */
+}
+
+
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background: rgba(255, 255, 255, 0.9);
+  filter: "alpha(opacity=90)";
+  -ms-filter: "alpha(opacity=90)";
+  /* old ie */
+}
+
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+  background-image: url(../img/mCSB_buttons.png);
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  filter: "alpha(opacity=40)";
+  -ms-filter: "alpha(opacity=40)";
+  /* old ie */
+}
+
+
+.mCSB_scrollTools .mCSB_buttonUp {
+  background-position: 0 0;
+  /*
+  sprites locations are 0 0/-16px 0/-32px 0/-48px 0 (light) and -80px 0/-96px 0/-112px 0/-128px 0 (dark)
+  */
+}
+
+
+.mCSB_scrollTools .mCSB_buttonDown {
+  background-position: 0 -20px;
+  /*
+  sprites locations are 0 -20px/-16px -20px/-32px -20px/-48px -20px (light) and -80px -20px/-96px -20px/-112px -20px/-128px -20px (dark)
+  */
+}
+
+
+.mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: 0 -40px;
+  /*
+  sprites locations are 0 -40px/-20px -40px/-40px -40px/-60px -40px (light) and -80px -40px/-100px -40px/-120px -40px/-140px -40px (dark)
+  */
+}
+
+
+.mCSB_scrollTools .mCSB_buttonRight {
+  background-position: 0 -56px;
+  /*
+  sprites locations are 0 -56px/-20px -56px/-40px -56px/-60px -56px (light) and -80px -56px/-100px -56px/-120px -56px/-140px -56px (dark)
+  */
+}
+
+
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover,
+.mCSB_scrollTools .mCSB_buttonLeft:hover,
+.mCSB_scrollTools .mCSB_buttonRight:hover {
+  opacity: 0.75;
+  filter: "alpha(opacity=75)";
+  -ms-filter: "alpha(opacity=75)";
+  /* old ie */
+}
+
+
+.mCSB_scrollTools .mCSB_buttonUp:active,
+.mCSB_scrollTools .mCSB_buttonDown:active,
+.mCSB_scrollTools .mCSB_buttonLeft:active,
+.mCSB_scrollTools .mCSB_buttonRight:active {
+  opacity: 0.9;
+  filter: "alpha(opacity=90)";
+  -ms-filter: "alpha(opacity=90)";
+  /* old ie */
+}
+
+/*scrollbar themes*/
+/*dark (dark colored scrollbar)*/
+
+.mCS-dark > .mCSB_scrollTools .mCSB_draggerRail {
+  background: #000;
+  /* rgba fallback */
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
+.mCS-dark > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #000;
+  /* rgba fallback */
+  background: rgba(0, 0, 0, 0.75);
+}
+
+
+.mCS-dark > .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+
+.mCS-dark > .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark > .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+
+.mCS-dark > .mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -80px 0;
+}
+
+
+.mCS-dark > .mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -80px -20px;
+}
+
+
+.mCS-dark > .mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -80px -40px;
+}
+
+
+.mCS-dark > .mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -80px -56px;
+}
+
+/*light-2*/
+
+.mCS-light-2 > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 4px;
+  background: #fff;
+  /* rgba fallback */
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+
+.mCS-light-2 > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 4px;
+  background: #fff;
+  /* rgba fallback */
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+
+.mCS-light-2.mCSB_horizontal > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 100%;
+  height: 4px;
+  margin: 6px 0;
+}
+
+
+.mCS-light-2.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 4px;
+  margin: 6px auto;
+}
+
+
+.mCS-light-2 > .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+
+.mCS-light-2 > .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-light-2 > .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+
+.mCS-light-2 > .mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -32px 0;
+}
+
+
+.mCS-light-2 > .mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -32px -20px;
+}
+
+
+.mCS-light-2 > .mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -40px -40px;
+}
+
+
+.mCS-light-2 > .mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -40px -56px;
+}
+
+/*dark-2*/
+
+.mCS-dark-2 > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 4px;
+  background: #000;
+  /* rgba fallback */
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+
+.mCS-dark-2 > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 4px;
+  background: #000;
+  /* rgba fallback */
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+
+.mCS-dark-2.mCSB_horizontal > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 100%;
+  height: 4px;
+  margin: 6px 0;
+}
+
+
+.mCS-dark-2.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 4px;
+  margin: 6px auto;
+}
+
+
+.mCS-dark-2 > .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+
+.mCS-dark-2 > .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-2 > .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+
+.mCS-dark-2 > .mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -112px 0;
+}
+
+
+.mCS-dark-2 > .mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -112px -20px;
+}
+
+
+.mCS-dark-2 > .mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -120px -40px;
+}
+
+
+.mCS-dark-2 > .mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -120px -56px;
+}
+
+/*light-thick*/
+
+.mCS-light-thick > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 4px;
+  background: #fff;
+  /* rgba fallback */
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+
+.mCS-light-thick > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+  background: #fff;
+  /* rgba fallback */
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+
+.mCS-light-thick.mCSB_horizontal > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 100%;
+  height: 4px;
+  margin: 6px 0;
+}
+
+
+.mCS-light-thick.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 6px;
+  margin: 5px auto;
+}
+
+
+.mCS-light-thick > .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+
+.mCS-light-thick > .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-light-thick > .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+
+.mCS-light-thick > .mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -16px 0;
+}
+
+
+.mCS-light-thick > .mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -16px -20px;
+}
+
+
+.mCS-light-thick > .mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -20px -40px;
+}
+
+
+.mCS-light-thick > .mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -20px -56px;
+}
+
+/*dark-thick*/
+
+.mCS-dark-thick > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 4px;
+  background: #000;
+  /* rgba fallback */
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+
+.mCS-dark-thick > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+  background: #000;
+  /* rgba fallback */
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+
+.mCS-dark-thick.mCSB_horizontal > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 100%;
+  height: 4px;
+  margin: 6px 0;
+}
+
+
+.mCS-dark-thick.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 6px;
+  margin: 5px auto;
+}
+
+
+.mCS-dark-thick > .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+
+.mCS-dark-thick > .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-thick > .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+
+.mCS-dark-thick > .mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -96px 0;
+}
+
+
+.mCS-dark-thick > .mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -96px -20px;
+}
+
+
+.mCS-dark-thick > .mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -100px -40px;
+}
+
+
+.mCS-dark-thick > .mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -100px -56px;
+}
+
+/*light-thin*/
+
+.mCS-light-thin > .mCSB_scrollTools .mCSB_draggerRail {
+  background: #fff;
+  /* rgba fallback */
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+.mCS-light-thin > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 2px;
+}
+
+
+.mCS-light-thin.mCSB_horizontal > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 100%;
+}
+
+
+.mCS-light-thin.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 2px;
+  margin: 7px auto;
+}
+
+/*dark-thin*/
+
+.mCS-dark-thin > .mCSB_scrollTools .mCSB_draggerRail {
+  background: #000;
+  /* rgba fallback */
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
+.mCS-dark-thin > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 2px;
+  background: #000;
+  /* rgba fallback */
+  background: rgba(0, 0, 0, 0.75);
+}
+
+
+.mCS-dark-thin.mCSB_horizontal > .mCSB_scrollTools .mCSB_draggerRail {
+  width: 100%;
+}
+
+
+.mCS-dark-thin.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%;
+  height: 2px;
+  margin: 7px auto;
+}
+
+
+.mCS-dark-thin > .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+
+.mCS-dark-thin > .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-thin > .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+
+.mCS-dark-thin > .mCSB_scrollTools .mCSB_buttonUp {
+  background-position: -80px 0;
+}
+
+
+.mCS-dark-thin > .mCSB_scrollTools .mCSB_buttonDown {
+  background-position: -80px -20px;
+}
+
+
+.mCS-dark-thin > .mCSB_scrollTools .mCSB_buttonLeft {
+  background-position: -80px -40px;
+}
+
+
+.mCS-dark-thin > .mCSB_scrollTools .mCSB_buttonRight {
+  background-position: -80px -56px;
+}
+
+@keyframes arrowHover {
+  0% {
+    border-color: black;
+  }
+  50% {
+    border-color: orange;
+  }
+  100% {
+    border-color: black;
+  }
+}
+@-webkit-keyframes arrowHover /* Safari and Chrome */ {
+  0% {
+    border-color: black;
+  }
+  50% {
+    border-color: orange;
+  }
+  100% {
+    border-color: black;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+
+body {
+  font-size: 1.1em;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.4;
+  margin: auto;
+  background: white url("../img/body_bkg.png") repeat;
+  box-shadow: 0 0 10px #ccc;
+  position: relative;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+@media screen and (min-width: 800px) {
+  
+  body {
+    max-width: 960px;
+  }
+}
+
+/*
+  * Remove text-shadow in selection highlight: h5bp.com/i
+  * These selection rule sets have to be separate.
+  * Customize the background color to match your design.
+*/
+
+::-moz-selection {
+  background: #EFC6C6;
+  text-shadow: none;
+}
+
+
+::selection {
+  background: #EFC6C6;
+  text-shadow: none;
+}
+
+/*
+  * A better looking default horizontal rule
+*/
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+
+img {
+  vertical-align: middle;
+}
+
+/*
+  * Remove default fieldset styles.
+*/
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  * Allow only vertical resizing of textareas.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+  Chrome Frame prompt
+========================================================================== */
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+  Author's custom styles
+========================================================================== */
+
+#socialLinks {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+
+#socialLinks a {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#socialLinks a:hover {
+  border-color: #333;
+}
+
+#socialLinks .fb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#socialLinks .linkedin img {
+  position: absolute;
+  top: 9px;
+  left: 8px;
+}
+
+
+.arrowBar {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  cursor: pointer;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+}
+
+.arrowBar:hover {
+  color: orange;
+  animation: arrowHover 600ms;
+  -webkit-animation: arrowHover 600ms;
+  /* Safari and Chrome */
+}
+
+.arrowBar.refNav {
+  margin: auto;
+  position: absolute;
+  display: none;
+  top: 430px;
+  cursor: pointer;
+  z-index:999;
+}
+
+.arrowBar.right {
+  right: 15px;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Safari and Chrome */
+}
+
+.arrowBar.left {
+  left: 15px;
+  transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  /* IE 9 */
+  -webkit-transform: rotate(135deg);
+  /* Safari and Chrome */
+}
+
+
+section {
+  width: 100%;
+  position: relative;
+  padding: 5px 10px;
+}
+@media screen and (min-height: 800px) {
+  
+  section {
+    padding-top: 80px;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
+
+section.light {
+  color: black;
+}
+
+
+section.dark {
+  padding-left: 400px;
+  color: white;
+  background-color: #555;
+  text-align: right;
+  box-shadow: 0 0 10px #888;
+}
+@media screen and (max-width: 800px) {
+  
+  section.dark {
+    background: black !important;
+    padding-left: 70px;
+  }
+}
+
+
+p {
+  font-family: serif;
+  font-size: 13px;
+}
+
+
+h1 {
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: default;
+}
+
+
+h2 {
+  text-transform: uppercase;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: all 300ms;
+  border-bottom: 1px solid white;
+}
+
+a:hover {
+  color: #BB434F;
+  border-bottom: 1px solid #BB434F;
+}
+
+
+.text {
+  font-family: serif;
+}
+
+/******************************************************************************/
+
+header {
+  width: 100%;
+  height: 330px;
+  padding: 40px 0;
+  padding-top: 70px;
+}
+
+header nav {
+  width: 100%;
+  margin: auto;
+  color: #333;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+@media screen and (min-width: 800px) {
+  
+  header nav {
+    width: 400px;
+  }
+}
+
+header ul {
+  text-align: center;
+  padding: 0;
+  margin: 7px 0;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@media screen and (min-width: 800px) {
+  header li {
+    margin: 0 14px;
+  }
+}
+
+header li:first-child {
+  margin-left: 0;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+header a {
+  font-size: 12px;
+}
+
+/******************************************************************************/
+
+#bannerSection {
+  padding: 0;
+  margin-bottom: 100px;
+  box-shadow: 0 0 10px #888;
+}
+
+#bannerSection img {
+  width: 100%;
+}
+
+/******************************************************************************/
+
+#aboutSection {
+  min-height: 500px;
+}
+
+#aboutSection h2 {
+  text-align: center;
+}
+
+#aboutSection .paragraph {
+  margin: 0 10px 10px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+#aboutSection .paragraph div {
+  width: 48%;
+}
+
+#aboutSection .paragraph .firstLetter {
+  color: #BB434F;
+  font-size: 30px;
+  line-height: 100%;
+}
+
+#aboutSection .paragraph.last {
+  font-style: italic;
+}
+
+#aboutSection #cite {
+  display: block;
+  position: relative;
+  margin-bottom: 80px;
+  color: #BB434F;
+  text-align: center;
+  font-family: 'Italianno', cursive;
+  font-size: 35px;
+}
+
+#aboutSection #cite div {
+  right: 80px;
+  top: 40px;
+  font-style: normal;
+  font-size: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  
+  #aboutSection #cite div {
+    position: absolute;
+  }
+}
+
+/******************************************************************************/
+
+#workSection {
+  min-height: 680px;
+  background: black url("../img/work_bkg.png") no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  background-size: contain;
+}
+
+#workSection .text {
+  width: 100%;
+  float: right;
+  line-height: 150%;
+}
+
+#workSection table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#workSection tr.odd {
+  background-color: #0A0A0A;
+}
+
+#workSection td {
+  height: 70px;
+  padding: 5px;
+  vertical-align: top;
+}
+
+#workSection .year {
+  width: 100px;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: #222;
+  text-shadow: 0 0 3px #111;
+}
+
+/******************************************************************************/
+
+#refSection, #projSection {
+  min-height: 700px;
+}
+
+#refSection h2, #projSection h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.refArticlesWrapper {
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+  overflow: hidden;
+}
+
+.refArticle {
+  position: relative;
+  display: inline-block;
+  float: left;
+  font-family: "Source Sans Pro", sans-serif;
+  transition: all 200ms;
+}
+
+.refArticle.last {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .refArticle {
+    width: 310px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .refArticle {
+    width: 230px;
+    margin-right: 50px;
+  }
+}
+
+.refArticle h3 {
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.refArticle .refText {
+  height: 200px;
+}
+
+.refArticle .rect {
+  width: 65%;
+  margin: 20%;
+  box-shadow: 0 0 15px #999;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  overflow: auto;
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+}
+
+.refArticle .rect img {
+  width: 100%;
+}
+
+.refArticle .type {
+  width: 100%;
+  font-size: 11px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.refArticle .type:first-letter {
+  font-size: 14px;
+}
+
+/******************************************************************************/
+
+#contactSection {
+  /*min-height: 680px;*/
+  height: 430px;
+  background: black url("../img/mic_up.png") no-repeat;
+  background-position: 100px bottom;
+  background-size: 130px;
+}
+
+#contactSection #email {
+  position: relative;
+  top: 90px;
+  float: right;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  #contactSection #email {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contactSection #email {
+    font-size: inherit;
+    letter-spacing: inherit;
+  }
+}
+
+
+footer {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background: white url("../img/mic_btm.png") repeat-y;
+  background-position: 168px 0;
+  background-size: 26px;
+  font-size: 11px;
+}
+@media screen and (max-width: 800px) {
+  
+  footer {
+    background: white;
+  }
+}
+
+footer div {
+  position: absolute;
+  bottom: 10px;
+}
+
+footer #authors {
+  right: 20px;
+}
+
+footer #copy {
+  left: 20px;
+}
+
+/* ==========================================================================
+  Helper classes
+========================================================================== */
+
+.left {
+  float: left;
+}
+
+
+.right {
+  float: right;
+}
+
+/*
+  * Image replacement
+*/
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+  * Hide from both screenreaders and browsers: h5bp.com/u
+*/
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+  * Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+  * Extends the .visuallyhidden class to allow the element to be focusable
+  * when navigated to via the keyboard: h5bp.com/p
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+  * Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+*/
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+  EXAMPLE Media Queries for Responsive Design.
+  These examples override the primary ('mobile first') styles.
+  Modify as content requires.
+========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+  Print styles.
+  Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
+@media print {
+
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+    * Don't show links for images, or javascript/internal links
+  */
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
