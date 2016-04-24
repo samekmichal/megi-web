@@ -1689,6 +1689,15 @@ header a {
   line-height: 150%;
 }
 
+#workSection .place {
+  font-size: 1em;
+}
+
+#workSection .position {
+  color: grey;
+  font-size: 0.8em;
+}
+
 #workSection table {
   width: 100%;
   margin-top: 20px;
