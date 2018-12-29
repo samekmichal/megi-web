@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $("#currentYear").html((new Date()).getFullYear());
+
   $(".refText").mCustomScrollbar();
 
   $('.menuLink').click(function(e) {
@@ -46,5 +48,3 @@ $(document).ready(function() {
   $(window).resize(resize);
 
 });
-
-

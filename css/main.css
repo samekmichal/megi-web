@@ -780,23 +780,6 @@ table {
 }
 
 
-.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-  background: rgba(255, 255, 255, 0.85);
-  filter: "alpha(opacity=85)";
-  -ms-filter: "alpha(opacity=85)";
-  /* old ie */
-}
-
-
-.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
-.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
-  background: rgba(255, 255, 255, 0.9);
-  filter: "alpha(opacity=90)";
-  -ms-filter: "alpha(opacity=90)";
-  /* old ie */
-}
-
-
 .mCSB_scrollTools .mCSB_buttonUp,
 .mCSB_scrollTools .mCSB_buttonDown,
 .mCSB_scrollTools .mCSB_buttonLeft,
@@ -1317,7 +1300,7 @@ body {
   max-width: 100%;
 }
 @media screen and (min-width: 800px) {
-  
+
   body {
     max-width: 960px;
   }
@@ -1482,7 +1465,7 @@ section {
   padding: 5px 10px;
 }
 @media screen and (min-height: 800px) {
-  
+
   section {
     padding-top: 80px;
     padding-right: 70px;
@@ -1504,7 +1487,7 @@ section.dark {
   box-shadow: 0 0 10px #888;
 }
 @media screen and (max-width: 800px) {
-  
+
   section.dark {
     background: black !important;
     padding-left: 70px;
@@ -1571,7 +1554,7 @@ header nav {
   border-bottom: 1px solid #aaa;
 }
 @media screen and (min-width: 800px) {
-  
+
   header nav {
     width: 400px;
   }
@@ -1638,7 +1621,7 @@ header a {
   width: 48%;
 }
 
-#aboutSection .paragraph .firstLetter {
+.firstLetter {
   color: #BB434F;
   font-size: 30px;
   line-height: 100%;
@@ -1667,7 +1650,7 @@ header a {
   text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
-  
+
   #aboutSection #cite div {
     position: absolute;
   }
@@ -1850,7 +1833,7 @@ footer {
   font-size: 11px;
 }
 @media screen and (max-width: 800px) {
-  
+
   footer {
     background: white;
   }
@@ -1867,6 +1850,14 @@ footer #authors {
 
 footer #copy {
   left: 20px;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  background: rgba(230  , 230 , 230 , 0.55);
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: rgba(0, 0, 0, 0.15);
 }
 
 /* ==========================================================================
